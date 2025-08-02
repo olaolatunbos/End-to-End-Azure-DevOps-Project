@@ -64,11 +64,11 @@ The `vote` app will be running at [http://localhost:8080](http://localhost:8080)
 ```
 
 ## 🔧 Pipelines
-This Azure DevOps pipeline builds and pushes a Docker image for the worker service to Azure Container Registry whenever changes are made to files in the worker/ directory. It uses a Docker task to build the image from the specified Dockerfile and tag it with the build ID. After the image is pushed, it runs a shell script (update-manifest.sh) to update the Kubernetes manifest with the new image tag, helping automate deployments. The pipeline consists of two stages: Build and Update.
+This Azure DevOps pipelines builds and pushes a Docker image  to Azure Container Registry whenever changes are made to files. After the image is pushed, it runs a shell script (update-manifest.sh) to update the Kubernetes manifest with the new image tag, helping automate deployments. The pipeline consists of two stages: Build and Update.
 
 ## Scripts
 ### update-manifest.sh
-This Bash script automates the process of updating a Kubernetes deployment manifest in a Git repository. It clones the specified repo into a temporary directory, modifies the container image tag in a deployment YAML file using sed, commits the change with a predefined message, pushes the update back to the repository, and then cleans up the temporary files.
+This Bash script automates the process of updating a Kubernetes deployment manifest in a Git repository. It modifies the container image tag in a deployment YAML file .
 
 ## ✨ Features
 
