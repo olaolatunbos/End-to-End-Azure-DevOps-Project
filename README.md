@@ -2,6 +2,8 @@
 
 ## Overview
 This project leverages Docker, Kubernetes (AKS), and GitOps with Argo CD. It features CI/CD automation using Azure Pipelines, with container images managed in Azure Container Registry.
+<img width="1905" height="978" alt="Screenshot 2025-08-02 at 19 11 30" src="https://github.com/user-attachments/assets/8137bddb-b001-41a6-a0c4-08d66974173c" />
+<img width="1921" height="974" alt="Screenshot 2025-08-02 at 19 11 22" src="https://github.com/user-attachments/assets/589bc8c4-3bc9-46e6-9aa7-ab483afd93da" />
 
 ## Architecture Diagram
 <img width="803" alt="Screenshot 2025-05-04 at 00 14 11" src="https://github.com/user-attachments/assets/fc732962-8cef-4666-b1d9-89cc934122c8" />
